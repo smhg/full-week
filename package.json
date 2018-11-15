@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js test",
-    "test": "mocha --require @babel/register"
+    "test": "TZ=Europe/Brussels mocha --require @babel/register",
+    "preversion": "npm run lint && npm run test",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
