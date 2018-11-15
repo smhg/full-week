@@ -2,13 +2,16 @@
   "name": "full-week",
   "version": "1.0.0",
   "description": "Calculate the start of the nth full week of a year or month.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint index.js test",
+    "build": "babel --source-maps -d dist src",
     "test": "TZ=Europe/Brussels mocha --require @babel/register",
+    "clean": "rm -rf dist",
     "preversion": "npm run lint && npm run test",
     "postversion": "git push && git push --tags",
-    "prepublishOnly": "npm run lint && npm run test"
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "postpublish": "npm run clean"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
   },
   "homepage": "https://github.com/smhg/full-week#readme",
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@babel/register": "^7.0.0",
