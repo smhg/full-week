@@ -4,7 +4,7 @@
   "description": "Calculate the start of the nth full week of a year or month.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/smhg/full-week/issues"
   },
-  "homepage": "https://github.com/smhg/full-week#readme"
+  "homepage": "https://github.com/smhg/full-week#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "mocha": "^5.2.0"
+  }
 }
