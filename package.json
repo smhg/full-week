@@ -4,7 +4,7 @@
   "description": "Calculate the start of the nth full week of a year or month.",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint index.js test",
+    "lint": "eslint src test",
     "build": "babel --source-maps -d dist src",
     "test": "TZ=Europe/Brussels mocha --require @babel/register",
     "clean": "rm -rf dist",
