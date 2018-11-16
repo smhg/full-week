@@ -1,6 +1,6 @@
 {
   "name": "full-week",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate the start of the nth full week of a year or month.",
   "main": "dist/index.js",
   "scripts": {
