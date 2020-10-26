@@ -1,4 +1,4 @@
-# full-week [![Build Status](https://travis-ci.org/smhg/full-week.svg?branch=master)](https://travis-ci.org/smhg/full-week)
+# full-week ![CI](https://github.com/smhg/full-week/workflows/CI/badge.svg)
 Calculate the start of the *n*th full week of a year or month.
 
 > **Note:** start of the week [currently](https://github.com/smhg/full-week/issues/1) means Monday (ISO)
