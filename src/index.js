@@ -1,19 +1,19 @@
-const isoWeekday = (date = new Date()) => (date.getDay() + 6) % 7 + 1;
+import getWeekday from './weekday';
 
-export default function fullWeek (idx = 1, year, month = 0) {
-  const weekday = isoWeekday(new Date(year, month, 1));
+export default function fullWeek (index, year, month = 0, startOfWeek = 1) {
+  const weekday = getWeekday(new Date(year, month, 1), startOfWeek);
 
-  if (idx < 0) {
+  if (index < 0) {
     return new Date(
       year,
       month,
-      7 * idx - weekday + 2
+      7 * index - weekday + 1
     );
   }
 
   return new Date(
     year,
     month,
-    7 * idx + (8 - weekday) % 7 - 6
+    7 * index + (7 - weekday) % 7 - 6
   );
 }
