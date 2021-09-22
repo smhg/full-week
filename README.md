@@ -1,4 +1,4 @@
-# full-week ![CI](https://github.com/smhg/full-week/workflows/CI/badge.svg)
+# full-week [![ci](https://github.com/smhg/full-week/actions/workflows/ci.yml/badge.svg)](https://github.com/smhg/full-week/actions/workflows/ci.yml)
 Calculate the start of the *n*th full week of a year or month.
 
 ## API
