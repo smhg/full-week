@@ -2,4 +2,5 @@
 /test
 .gitignore
 .eslintrc.json
+.npmrc
 npm-debug.log
