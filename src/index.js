@@ -1,4 +1,4 @@
-import getWeekday from './weekday';
+import getWeekday from './weekday.js';
 
 export default function fullWeek (index, year, month = 0, startOfWeek = 1) {
   const weekday = getWeekday(new Date(year, month, 1), startOfWeek);

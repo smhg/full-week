@@ -1,5 +1,5 @@
 import assert from 'assert';
-import weekday from '../src/weekday';
+import weekday from '../src/weekday.js';
 
 describe('getWeekday()', function () {
   const monday = new Date(2020, 9, 26);

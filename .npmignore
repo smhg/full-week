@@ -1,6 +1,5 @@
 /node_modules
 /test
 .gitignore
-.babelrc
 .eslintrc.json
 npm-debug.log

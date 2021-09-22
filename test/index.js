@@ -1,5 +1,5 @@
 import assert from 'assert';
-import fullWeek from '../src';
+import fullWeek from '../src/index.js';
 
 describe('fullWeek(idx, year)', function () {
   it('should return start of first full week', function () {
